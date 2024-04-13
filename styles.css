@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  /* fonts */
+  --ff-barlow: "Barlow Semi Condensed", sans-serif;
+  /* primary colours */
+  --clr-violet: hsl(263, 55%, 52%);
+  --clr-very-dark-greyish-blue: hsl(217, 19%, 35%);
+  --clr-very-dark-blackish-blue: hsl(219, 29%, 14%);
+  --clr-white: hsl(0, 0%, 100%);
+  /* secondary colours */
+  --clr-light-grey: hsl(0, 0%, 81%);
+  --clr-light-greyish-blue: hsl(210, 46%, 95%);
+}
+
+/* reset */
+*,
+*::before,
+*::after {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: var(--ff-barlow);
+  color: var(--clr-very-dark-greyish-blue);
+}
+
+body {
+  font-size: 1.6rem;
+  background-color: var(--clr-light-grey);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  display: grid;
+  gap: 2rem;
+  width: 90%;
+  margin: 4rem auto;
+}
+
+article div {
+  margin: 1rem 0;
+}
+
+.card__details h3 {
+  position: relative;
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+  font-size: 2.5rem;
+  font-weight: 600;
+  z-index: 5;
+}
+
+img {
+  height: 5rem;
+  border-radius: 100px;
+}
+
+.card {
+  background-color: var(--clr-white);
+  padding: 1rem 2.5rem 2rem;
+}
+
+.card__name {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1rem;
+}
+
+.daniel,
+.jonathan,
+.patrick {
+  color: var(--clr-white);
+}
+
+.daniel {
+  background-color: var(--clr-violet);
+  position: relative;
+}
+
+.daniel::before {
+  position: absolute;
+  content: url(images/bg-pattern-quotation.svg);
+  top: 0.3rem;
+  right: 2rem;
+  font-size: 6rem;
+  z-index: 1;
+}
+
+.jonathan {
+  background-color: var(--clr-very-dark-greyish-blue);
+}
+
+.patrick {
+  background-color: var(--clr-very-dark-blackish-blue);
+}
