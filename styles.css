@@ -37,12 +37,16 @@ html {
 
 body {
   font-size: 1.6rem;
-  background-color: var(--clr-light-grey);
+  background-color: #ecf2f7;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+h1 {
+  color: #ecf2f7;
 }
 
 main {
